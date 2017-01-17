@@ -11,7 +11,3 @@ youtube: '8asRWe5XNw8'
 Docs:
 - getting started
 ---
-#hello
-In this video, we show you around the Siteleaf interface and create a simple website.
-
-Watch <a href="http://vimeo.com/69294068">Getting started with Siteleaf</a>.
