@@ -1,0 +1,27 @@
+<header id="header" class="header header--fixed hide-from-print top_nav__panel" role="banner">
+    <div class="container">
+
+        <nav id="nav" class="brackets" role="navigation">
+            <ul class="nav">
+                {% for item in site.data.navigation.header %}
+                <li class="nav__item ">
+                    <a {% if item.url == page.url %} class="header__link is_active" {% else %} class="header__link"{% endif %} href="{{ item.url | prepend: site.baseurl }}">
+                        <span class="complimentary">{{ item.title }}</span>
+                    </a>
+                </li>
+                {% endfor %}
+                <li class="nav__item">
+                    <a class="header__link" href="#">
+                        <span class="complimentary">@ayuplus</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <a href="index.html" class="brand header__link">
+            <span class="brand__forename">ayuplus</span>
+            <span class="brand__surname">.io</span>
+        </a>
+    </div>
+</header>

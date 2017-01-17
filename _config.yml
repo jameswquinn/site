@@ -1,0 +1,42 @@
+title: ayuplus
+timezone: '+000'
+email: your-email@domain.com
+baseurl: "/site" # the subpath of your site, e.g. /blog
+url: "http://jameswquinn.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+description: Built for developers, Loved by everyone. Supports Jekyll, user collaboration,
+  publishing to AWS S3, GitHub Pages, FTP, and more.
+permalink: pretty
+exclude:
+- Gruntfile.js
+- Gemfile
+- Gemfile.lock
+- package.json
+- README*
+- node_modules
+
+- ".gitignore"
+gems:
+- jekyll-seo-tag
+- jekyll-sitemap
+- jekyll-paginate
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+excerpt_separator: |2+
+
+twitter_username: jekyllrb
+github_username:  jekyll
+
+sass:
+  sass_dir: styles/
+  style: compressed
+per_page: 12
+date_format: "%b %d, %Y"
+google_analytics: UA-1666437-33
+twitter:
+  username: 
+logo: "/assets/logo.svg"
+future: true

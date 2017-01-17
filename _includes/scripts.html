@@ -1,0 +1,84 @@
+<script src="{{ '/scripts/zepto.min.js' | prepend: site.baseurl }}"></script>
+<script src="{{ '/scripts/main.js' | prepend: site.baseurl }}"></script>
+<script>
+(function() {
+    var header = document.querySelector("#header");
+
+    if (window.location.hash) {
+        header.classList.add("headroom--unpinned");
+    }
+
+    var headroom = new Headroom(header, {
+        tolerance: {
+            down: 10,
+            up: 20
+        },
+        offset: 205
+    });
+    headroom.init();
+
+}());
+
+// If using jQuery
+// $('.masthead-video').coverVid(1920, 1080);
+// If not using jQuery (Native Javascript)
+coverVid(document.querySelector('.masthead-video'), 1920, 1080);
+fullscreen();
+$(window).resize(fullscreen);
+$(window).scroll(headerParallax);
+
+function fullscreen() {
+    var masthead = $('.masthead');
+    var windowH = $(window).height();
+    var windowW = $(window).width();
+
+    masthead.width(windowW);
+    masthead.height(windowH);
+}
+
+function headerParallax() {
+    var st = $(window).scrollTop();
+    var headerScroll = $('.masthead h1');
+
+    if (st < 500) {
+        headerScroll.css('opacity', 1 - st / 1000);
+        $('.masthead-arrow ').css('opacity', 0.5 - st / 250);
+        headerScroll.css({
+            '-webkit-transform': 'translateY(' + st / 7 + '%)',
+            '-ms-transform': 'translateY(' + st / 7 + '%)',
+            transform: 'translateY(' + st / 7 + '%)'
+        });
+    }
+}
+
+window.bLazy = new Blazy({
+    container: '.container',
+    success: function(element) {
+        console.log("Element loaded: ", element.nodeName);
+    }
+});
+$(document).ready(function() {
+    $(window).scroll(function() {
+        var scrollPos = $(window).scrollTop(),
+            navbar = $('.navbar-default');
+
+        if (scrollPos > 20) {
+            navbar.addClass('change-color');
+        } else {
+            navbar.removeClass('change-color');
+        }
+    });
+});
+    
+$(document).ready(function() {
+    $(window).scroll(function() {
+        var scrollPos = $(window).scrollTop(),
+            navicon = $('.hamburger__icon');
+        if (scrollPos > 20) {
+            navicon.addClass('change-navicon');
+        } else {
+            navicon.removeClass('change-navicon');
+        }
+    });
+});
+</script>

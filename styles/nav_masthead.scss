@@ -1,0 +1,117 @@
+.nav {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 0;
+    float: right
+}
+.nav__item {
+    display: inline-block
+}
+
+
+.header__link {
+    color: #A9ABAE;
+    text-decoration: none;
+    border: none;
+    transition: 300ms
+}
+.header__link:hover,
+.header__link:focus {
+    color: red
+}
+.header--fixed {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    top: 0
+}
+.brand {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1em 0;
+    color: #fff;
+    -webkit-font-smoothing: antialiased
+}
+.brand__forename {
+    font-weight: bold;
+    color: red
+}
+.brand__surname {
+    font-weight: normal;
+    color: #fff
+}
+.complimentary {
+    display: none
+}
+.nav__hamburger {
+        display: inline;
+    }
+@media screen and (min-width: 40em) {
+    .brackets a::before,
+.brackets a::after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s
+}
+.brackets a::before {
+    content: '[';
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px)
+}
+.brackets a::after {
+    content: ']';
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px)
+}
+.brackets a:hover::before,
+.brackets a:hover::after,
+.brackets a:focus::before,
+.brackets a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px)
+}
+        .nav__item {
+        display: inline-block
+    }
+    .nav__item a {
+    display: inline-block;
+    padding: 1em .8em;
+    border: none
+}
+    .complimentary {
+        display: inline
+    }
+    .is_active {
+    text-decoration:line-through
+}
+    .nav__hamburger {
+        display: none;
+    }
+}
+.headroom {
+    transition: transform .25s ease-in-out;
+    will-change: transform
+}
+.headroom--pinned {
+    transform: translateY(0)
+}
+.headroom--unpinned {
+    transform: translateY(-100%)
+}
+
+.navbar-default {
+  background: transparent;
+  border: none;
+  transition: 0.2s all linear;	
+}
+
+.navbar-default.change-color {
+  background-color: #fff;
+}

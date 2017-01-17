@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ayuplus</title>
+    <description>Built for developers, Loved by everyone. Supports Jekyll, user collaboration, publishing to AWS S3, GitHub Pages, FTP, and more.</description>
+    <link>http://localhost:4000/site/</link>
+    <atom:link href="http://localhost:4000/site/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 17 Jan 2017 19:22:13 +0000</pubDate>
+    <lastBuildDate>Tue, 17 Jan 2017 19:22:13 +0000</lastBuildDate>
+    <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Getting started</title>
+        <description>&lt;p&gt;In this video, we show you around the Siteleaf interface and create a simple website.&lt;/p&gt;
+
+&lt;p&gt;Watch &lt;a href=&quot;http://vimeo.com/69294068&quot;&gt;Getting started with Siteleaf&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 01 Jul 2013 22:00:00 +0000</pubDate>
+        <link>http://localhost:4000/site/2013/07/01/getting-started/</link>
+        <guid isPermaLink="true">http://localhost:4000/site/2013/07/01/getting-started/</guid>
+        
+        <category>video</category>
+        
+        <category>tutorial</category>
+        
+        <category>v1</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Hello World, I’m Siteleaf</title>
+        <description>&lt;p&gt;Last week, &lt;a href=&quot;/blog/overview&quot;&gt;I ran through&lt;/a&gt; a number of &lt;a href=&quot;http://siteleaf.com&quot;&gt;Siteleaf’s&lt;/a&gt; most compelling features and provided a general overview of the service. This week, I’ll hold your hand through creating a basic website using Siteleaf.&lt;/p&gt;
+
+&lt;h3 id=&quot;creating-your-site&quot;&gt;Creating your site&lt;/h3&gt;
+
+&lt;p&gt;Assuming you’ve already &lt;a href=&quot;http://manage.siteleaf.com/signup&quot;&gt;signed up&lt;/a&gt; for a Siteleaf account, your first task is to create a site. Fill out your site’s title and domain name. If you’re just testing the waters, you can use a Siteleaf subdomain.&lt;/p&gt;
+
+&lt;h3 id=&quot;configuring-your-site&quot;&gt;Configuring your site&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/uploads/hello-world-im-siteleaf-site-settings.png&quot; alt=&quot;site-settings&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you create your site, Siteleaf will redirect to the site’s settings page. Here, you can edit its title, timezone, and publishing settings. You can also add site metadata, but I’ll hold off on that for now.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/uploads/hello-world-im-siteleaf-publishing-settings.png&quot; alt=&quot;publishing-settings&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For publishing settings, we’ll go with Siteleaf’s free CDN hosting for now—it’s quick and easy for getting a site up with zero configuration. Siteleaf also allows publishing to FTP, &lt;a href=&quot;http://aws.amazon.com/s3/&quot;&gt;Amazon S3&lt;/a&gt;, and &lt;a href=&quot;http://rackspace.com/cloud/files/&quot;&gt;Rackspace Cloud Files&lt;/a&gt;. I personally use S3 for its ability to handle heavy loads of traffic for just pennies a month.&lt;/p&gt;
+
+&lt;h3 id=&quot;creating-a-page&quot;&gt;Creating a page&lt;/h3&gt;
+
+&lt;p&gt;On the left sidebar, you’ll find the top-level navigation for the current site. Here, you can also create new pages and rearrange existing ones through drag and drop. Let’s create our first page by clicking ‘New page’.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Note: the first page in the ‘Pages’ list is considered the ‘Home’ page. It is rendered at the root path of your website.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/uploads/hello-world-im-siteleaf-new-page.png&quot; alt=&quot;new-page&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the ‘New page’ view, we’ll start by assigning a title to our page. Let’s go with ‘Blog’. Notice that the slug automatically populates itself as we type. You can also manually specify the slug if your title is unfashionably long.&lt;/p&gt;
+
+&lt;p&gt;Save the page by clicking the massive green button on the right or by using the command+S hotkey. Now, we can preview the page by clicking the ‘Preview’ link just below the gigantic green save button.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/uploads/hello-world-im-siteleaf-new-page-preview.png&quot; alt=&quot;new-page-preview&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Siteleaf provides a bare bones theme by default, so you can at least preview your content before touching any code. Our blog looks pretty empty, so let’s create a post.&lt;/p&gt;
+
+&lt;h3 id=&quot;creating-a-post&quot;&gt;Creating a post&lt;/h3&gt;
+
+&lt;p&gt;In Siteleaf, there are pages and posts. A site can have many pages. Pages can have many sub-pages. Pages can also have many posts. The difference between a page and a post is its ordering—pages can be reordered through drag and drop while posts are ordered by timestamps. The most common use of a post is for a blog, like the one we’re creating, but posts can also be used for archived content, like in the ‘Currently Brewing’ section of &lt;a href=&quot;http://www.cafejonnie.com/&quot;&gt;Café Jonnie&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/uploads/hello-world-im-siteleaf-add-post.png&quot; alt=&quot;add-post&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We can create a post for our blog by clicking either the ‘Add post’ link aside our title or the circle aside the ‘Blog’ page in the left sidebar.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/uploads/hello-world-im-siteleaf-new-post.png&quot; alt=&quot;new-post&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The ‘New post’ view is almost identical to the ‘New page’ view, except for the additional taxonomy option on the right sidebar. I’ll go into great detail about taxonomy in a future post, but for now, you can use it to assign tags to your posts.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/uploads/hello-world-im-siteleaf-visibility.png&quot; alt=&quot;hello-world-im-siteleaf-visibility&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;On the right sidebar, we also have visibility options. A ‘draft’ post won’t appear when published. A ‘hidden’ post will only be accessible by knowing its exact URL. And a ‘visible’ post is completely public, included in both the feed and sitemap.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/uploads/hello-world-im-siteleaf-upload-asset.png&quot; alt=&quot;upload-asset&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Before we publish, let’s add an image to make our post more visual. We can do this by clicking either the picture icon above the body field or the ‘Upload assets’ link below it. Upon uploading the image, it will appear as a thumbnail below the body. If you used the picture icon, the image’s Markdown code will automatically appear in the body. If you used the ‘Upload assets’ link, you can drag and drop the thumbnail to the body to add the image’s Markdown code.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/uploads/hello-world-im-siteleaf-final-post-preview.jpg&quot; alt=&quot;final-post-preview&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, when we preview our post, the image is there along with the ‘announcement’ tag link.&lt;/p&gt;
+
+&lt;h3 id=&quot;publishing-your-site&quot;&gt;Publishing your site&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/uploads/hello-world-im-siteleaf-publish.png&quot; alt=&quot;publish&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If everything looks good, we can click the publish button on the top right. This will first take your content, combine it with your templates, and compile static HTML files. It will then push the files to your host. With the animation, this moment is actually pretty exciting—it makes any update feel like a big deal, worthy of celebration.&lt;/p&gt;
+
+&lt;h3 id=&quot;wrapping-up&quot;&gt;Wrapping up&lt;/h3&gt;
+
+&lt;p&gt;I covered a lot of ground in this post, but there is so much more ahead of us. While this ‘Hello World’ was a very basic use-case, know that Siteleaf is capable of handling much greater complexity. The next few posts will demonstrate this through use of custom templates, metadata, and taxonomy. In the meantime, feel free to &lt;a href=&quot;http://twitter.com/siteleaf&quot;&gt;reach out&lt;/a&gt; with any questions or comments.&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;This article was originally posted on destroytoday.com.&lt;/small&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 01 Jul 2013 14:43:00 +0000</pubDate>
+        <link>http://localhost:4000/site/2013/07/01/hello-world-im-siteleaf/</link>
+        <guid isPermaLink="true">http://localhost:4000/site/2013/07/01/hello-world-im-siteleaf/</guid>
+        
+        <category>tutorial</category>
+        
+        <category>v1</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Introducing Siteleaf</title>
+        <description>&lt;p&gt;Watch &lt;a href=&quot;http://vimeo.com/69301083&quot;&gt;Introducing Siteleaf&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 28 Jun 2013 21:50:00 +0000</pubDate>
+        <link>http://localhost:4000/site/2013/06/28/video/</link>
+        <guid isPermaLink="true">http://localhost:4000/site/2013/06/28/video/</guid>
+        
+        <category>video</category>
+        
+        <category>v1</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Siteleaf overview</title>
+        <description>&lt;p&gt;Recently, we at &lt;a href=&quot;http://oak.is&quot;&gt;Oak&lt;/a&gt; launched a new website publishing platform, called &lt;a href=&quot;http://siteleaf.com&quot;&gt;Siteleaf&lt;/a&gt;. In short, Siteleaf lets you build your website locally, edit its content in the cloud, and publish to static. In between, it’s so much more. Let me tell you about it.&lt;/p&gt;
+
+&lt;h3 id=&quot;develop-locally&quot;&gt;Develop locally&lt;/h3&gt;
+
+&lt;p&gt;As the one who makes the websites, you undoubtedly have a dev environment you prefer. All your code is version-controlled, your snippets are award-worthy, and you are one with your text editor. With Siteleaf, there’s no online WYSIWYG editor forced upon you, so you can build your website in the comfort of your own IDE. Use the &lt;a href=&quot;https://github.com/siteleaf/siteleaf-gem&quot;&gt;Siteleaf gem&lt;/a&gt; to preview your templates locally using the data from the live server. When you’re ready to go live, simply push the files with the gem or upload them using the website. You can even use &lt;a href=&quot;http://pow.cx/&quot;&gt;Pow&lt;/a&gt; or &lt;a href=&quot;http://anvilformac.com/&quot;&gt;Anvil&lt;/a&gt; to preview your sites with a proper hostname.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/uploads/an-introduction-to-siteleaf-anvil.jpg&quot; alt=&quot;anvil&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;edit-content-in-the-cloud&quot;&gt;Edit content in the cloud&lt;/h3&gt;
+
+&lt;p&gt;Prior to Siteleaf, I used &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;, an open source, static site generator. With Jekyll, you build your templates locally, but you also edit your content locally. Over time, I grew frustrated with the need to open my local dev environment every time I wanted to write a new blog post. I would decide against writing a post just because it became such a chore. I wished for a Jekyll in the cloud where I could separate my website’s content from its code. This is where Siteleaf shines.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/uploads/an-introduction-to-siteleaf-interface.png&quot; alt=&quot;interface&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Siteleaf has a clean, simple web interface that stays out of your way, letting you focus on your content. Its layout is responsive, so you can write on any device. And the editor is built on &lt;a href=&quot;http://ace.ajax.org/&quot;&gt;Ace&lt;/a&gt;, so tabs work as expected and your Markdown is properly formatted.&lt;/p&gt;
+
+&lt;h3 id=&quot;publish-anywhere&quot;&gt;Publish anywhere&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/uploads/an-introduction-to-siteleaf-publish.png&quot; alt=&quot;publish&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;At Oak, we believe in data independence. You should be able to host your website wherever you want, without being tied down to the platform on which it was built. Siteleaf makes this possible by publishing static files to FTP, &lt;a href=&quot;http://aws.amazon.com/s3/&quot;&gt;Amazon S3&lt;/a&gt;, or &lt;a href=&quot;http://www.rackspace.com/cloud/files/&quot;&gt;Rackspace Cloud Files&lt;/a&gt;. You can also publish to Siteleaf’s CDN, so with one click and zero configuration, you can see your website online. This website is hosted on S3, which provides instant page loads and a $1/month hosting bill. If I were to ever have a change of heart, my website would still live on, independent of Siteleaf.&lt;/p&gt;
+
+&lt;h3 id=&quot;cascading-templates&quot;&gt;Cascading templates&lt;/h3&gt;
+
+&lt;p&gt;In determining which templates to use for each page or post, Siteleaf uses what we like to call “cascading templates.” Let’s say you have a blog post with the path &lt;code class=&quot;highlighter-rouge&quot;&gt;/blog/hello-world&lt;/code&gt;. With cascading templates, Siteleaf will check the following paths for a template:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/blog/hello-world/index.html
+/blog/hello-world.html
+/blog/default.html
+/default.html
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This provides the ability to easily customize your website down to a page-by-page level. Some of the more ambitious designers out there use a different template for each blog post and now that approach is even easier with Siteleaf. For more on Siteleaf templates, take a look at the &lt;a href=&quot;https://github.com/siteleaf/siteleaf-themes&quot;&gt;documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;liquid-templating&quot;&gt;Liquid templating&lt;/h3&gt;
+
+&lt;p&gt;If you use &lt;a href=&quot;http://shopify.com&quot;&gt;Shopify&lt;/a&gt; or Jekyll, you are certainly familiar with &lt;a href=&quot;https://github.com/Shopify/liquid/&quot;&gt;Liquid&lt;/a&gt;. For those who aren’t, it’s an incredibly simple and versatile templating language built by the fine folks at Shopify. With Siteleaf and Liquid, you can make a single-page website as easy as:&lt;/p&gt;
+
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;html&amp;gt;
+    &amp;lt;head&amp;gt;
+        &amp;lt;title&amp;gt;&lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt; - &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;&amp;lt;/title&amp;gt;
+    &amp;lt;/head&amp;gt;
+    &amp;lt;body&amp;gt;
+        &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;
+    &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The language is clear, yet powerful. It supports loops, conditionals, partials—you name it. Combined with Siteleaf’s flexible data structure, you can really push the boundaries. On this website, I use custom metadata to specify the colors on each page by inserting variables in the CSS, like:&lt;/p&gt;
+
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;style&amp;gt;
+    body {
+        background-color: &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;meta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;background_color&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;;
+    }
+&amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Taking it a step further, I can assign a fallback color, in case a page doesn’t specify the metadata:&lt;/p&gt;
+
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;style&amp;gt;
+    body {
+        background-color: &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;meta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;background_color&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;fallback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'#fff'&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;;
+    }
+&amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;A complete overview of Liquid’s syntax can be found &lt;a href=&quot;https://github.com/Shopify/liquid/wiki/Liquid-for-Designers&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;collaboration&quot;&gt;Collaboration&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/uploads/an-introduction-to-siteleaf-collaboration.png&quot; alt=&quot;collaboration&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Collaboration is very important when it comes to managing websites, even if you’re building one for an individual client. As soon as you finish the website, both you and the client need to be able to update it. Since all of us here need to be able to update both the Oak and Siteleaf websites, we needed collaboration from day one. With a team or agency account, you can invite a collaborator using their email address. If they are a Siteleaf user, your site will simply appear in their list. If they don’t have an account, Siteleaf will create a free, collaboration-only account for them.&lt;/p&gt;
+
+&lt;h3 id=&quot;in-closing&quot;&gt;In closing&lt;/h3&gt;
+
+&lt;p&gt;I hope this overview was useful to those wanting to know more about &lt;a href=&quot;http://siteleaf.com&quot;&gt;Siteleaf&lt;/a&gt;. There’s still so much more to share, but in a series of more detailed posts. I encourage you to kick the tires and let us know what you think. Siteleaf has become my go-to platform for building websites. I’m confident it will for you, too.&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;This article was originally posted on destroytoday.com.&lt;/small&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 22 Jun 2013 17:00:00 +0000</pubDate>
+        <link>http://localhost:4000/site/2013/06/22/overview/</link>
+        <guid isPermaLink="true">http://localhost:4000/site/2013/06/22/overview/</guid>
+        
+        <category>tutorial</category>
+        
+        <category>liquid</category>
+        
+        <category>v1</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Introducing Siteleaf</title>
+        <description>&lt;p&gt;&lt;strong&gt;Approach&lt;/strong&gt; — Managing content on sites can be a precarious task. We wanted to build a lean tool that would integrate easily into your workflow, yet provide everything necessary to maintain your content.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Goals&lt;/strong&gt; — Siteleaf aims to strike a balance between control and simplicity. We believe content management systems should be simple but not overly simplified. That you own your content, your sites should be able to outlive their CMS, and you should be able to host sites anywhere you want. With these principles in mind we developed Siteleaf.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Features&lt;/strong&gt; — Siteleaf is a lightweight platform for publishing websites. Write with markdown, collaborate with colleagues, develop with templates, build with &lt;a href=&quot;https://github.com/siteleaf&quot;&gt;our API&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;If you can write HTML, you can create with Siteleaf.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Develop locally with our built-in support for &lt;a href=&quot;http://anvilformac.com&quot;&gt;Anvil&lt;/a&gt; and &lt;a href=&quot;http://pow.cx&quot;&gt;Pow&lt;/a&gt;. You’re fully in control of your content. With Siteleaf you can publish to your FTP, &lt;a href=&quot;http://aws.amazon.com/s3/&quot;&gt;Amazon S3&lt;/a&gt;, &lt;a href=&quot;http://www.rackspace.com/cloud/files/&quot;&gt;Rackspace Cloud Files&lt;/a&gt;, or our Siteleaf Hosting and your content lives on forever. Sign up at our early adopter price and lock in free Siteleaf Hosting.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Outro&lt;/strong&gt; — Building Siteleaf has been a rewarding exercise in creating a web product from the ground up. We embraced the constraints of a time-boxed, iterative approach and worked within our limits to create our dream CMS. We are excited and proud to announce that as of today the first version of the new Siteleaf has launched and is ready to get to work! We think Siteleaf can change the way you manage sites. We love it and we think you will too. Choose from our &lt;a href=&quot;http://siteleaf.com/plans&quot;&gt;three plans&lt;/a&gt; and take advantage of our &lt;strong&gt;14-day trial period&lt;/strong&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 06 Jun 2013 02:47:00 +0000</pubDate>
+        <link>http://localhost:4000/site/2013/06/06/introducing-siteleaf/</link>
+        <guid isPermaLink="true">http://localhost:4000/site/2013/06/06/introducing-siteleaf/</guid>
+        
+        <category>announcement</category>
+        
+        <category>v1</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

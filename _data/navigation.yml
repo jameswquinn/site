@@ -1,0 +1,9 @@
+header:
+- title: home
+  url: /
+- title: about
+  url: /about/
+- title: blog
+  url: /blog/
+- title: find us
+  url: /contact/

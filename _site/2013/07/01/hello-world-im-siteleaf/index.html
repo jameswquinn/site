@@ -1,0 +1,254 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="msapplication-config" content="/site/browserconfig.xml" />
+<link rel="apple-touch-icon" sizes="180x180" href="/site/assets/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/site/assets/icons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/site/assets/icons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/site/manifest.json">
+<link rel="mask-icon" href="/site/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+<!-- Begin Jekyll SEO tag v2.1.0 -->
+<title>Hello World, I’m Siteleaf - ayuplus</title>
+<meta property="og:title" content="Hello World, I’m Siteleaf" />
+<meta name="description" content="Last week, I ran through a number of Siteleaf’s most compelling features and provided a general overview of the service. This week, I’ll hold your hand through creating a basic website using Siteleaf." />
+<meta property="og:description" content="Last week, I ran through a number of Siteleaf’s most compelling features and provided a general overview of the service. This week, I’ll hold your hand through creating a basic website using Siteleaf." />
+<link rel="canonical" href="http://localhost:4000/site/2013/07/01/hello-world-im-siteleaf/" />
+<meta property="og:url" content="http://localhost:4000/site/2013/07/01/hello-world-im-siteleaf/" />
+<meta property="og:site_name" content="ayuplus" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2013-07-01T14:43:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<script type="application/ld+json">
+{"@context": "http://schema.org",
+"@type": "BlogPosting",
+"headline": "Hello World, I’m Siteleaf",
+"datePublished": "2013-07-01T14:43:00+00:00",
+"description": "Last week, I ran through a number of Siteleaf’s most compelling features and provided a general overview of the service. This week, I’ll hold your hand through creating a basic website using Siteleaf.",
+"publisher": {"@type": "Organization",
+"logo": {"@type": "ImageObject",
+"url": "http://localhost:4000/site/assets/logo.svg"}},
+"url": "http://localhost:4000/site/2013/07/01/hello-world-im-siteleaf/"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link rel="stylesheet" href="/site/styles/main.css" />
+</head>
+<body>
+
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-1666437-33', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+<header id="header" class="header header--fixed hide-from-print top_nav__panel" role="banner">
+    <div class="container">
+
+        <nav id="nav" class="brackets" role="navigation">
+            <ul class="nav">
+                
+                <li class="nav__item ">
+                    <a  class="header__link" href="/site/">
+                        <span class="complimentary">home</span>
+                    </a>
+                </li>
+                
+                <li class="nav__item ">
+                    <a  class="header__link" href="/site/about/">
+                        <span class="complimentary">about</span>
+                    </a>
+                </li>
+                
+                <li class="nav__item ">
+                    <a  class="header__link" href="/site/blog/">
+                        <span class="complimentary">blog</span>
+                    </a>
+                </li>
+                
+                <li class="nav__item ">
+                    <a  class="header__link" href="/site/contact/">
+                        <span class="complimentary">find us</span>
+                    </a>
+                </li>
+                
+                <li class="nav__item">
+                    <a class="header__link" href="#">
+                        <span class="complimentary">@ayuplus</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <a href="index.html" class="brand header__link">
+            <span class="brand__forename">ayuplus</span>
+            <span class="brand__surname">.io</span>
+        </a>
+    </div>
+</header>
+<div class="container">
+<p>Last week, <a href="/blog/overview">I ran through</a> a number of <a href="http://siteleaf.com">Siteleaf’s</a> most compelling features and provided a general overview of the service. This week, I’ll hold your hand through creating a basic website using Siteleaf.</p>
+
+<h3 id="creating-your-site">Creating your site</h3>
+
+<p>Assuming you’ve already <a href="http://manage.siteleaf.com/signup">signed up</a> for a Siteleaf account, your first task is to create a site. Fill out your site’s title and domain name. If you’re just testing the waters, you can use a Siteleaf subdomain.</p>
+
+<h3 id="configuring-your-site">Configuring your site</h3>
+
+<p><img src="/uploads/hello-world-im-siteleaf-site-settings.png" alt="site-settings" /></p>
+
+<p>Once you create your site, Siteleaf will redirect to the site’s settings page. Here, you can edit its title, timezone, and publishing settings. You can also add site metadata, but I’ll hold off on that for now.</p>
+
+<p><img src="/uploads/hello-world-im-siteleaf-publishing-settings.png" alt="publishing-settings" /></p>
+
+<p>For publishing settings, we’ll go with Siteleaf’s free CDN hosting for now—it’s quick and easy for getting a site up with zero configuration. Siteleaf also allows publishing to FTP, <a href="http://aws.amazon.com/s3/">Amazon S3</a>, and <a href="http://rackspace.com/cloud/files/">Rackspace Cloud Files</a>. I personally use S3 for its ability to handle heavy loads of traffic for just pennies a month.</p>
+
+<h3 id="creating-a-page">Creating a page</h3>
+
+<p>On the left sidebar, you’ll find the top-level navigation for the current site. Here, you can also create new pages and rearrange existing ones through drag and drop. Let’s create our first page by clicking ‘New page’.</p>
+
+<p><em>Note: the first page in the ‘Pages’ list is considered the ‘Home’ page. It is rendered at the root path of your website.</em></p>
+
+<p><img src="/uploads/hello-world-im-siteleaf-new-page.png" alt="new-page" /></p>
+
+<p>In the ‘New page’ view, we’ll start by assigning a title to our page. Let’s go with ‘Blog’. Notice that the slug automatically populates itself as we type. You can also manually specify the slug if your title is unfashionably long.</p>
+
+<p>Save the page by clicking the massive green button on the right or by using the command+S hotkey. Now, we can preview the page by clicking the ‘Preview’ link just below the gigantic green save button.</p>
+
+<p><img src="/uploads/hello-world-im-siteleaf-new-page-preview.png" alt="new-page-preview" /></p>
+
+<p>Siteleaf provides a bare bones theme by default, so you can at least preview your content before touching any code. Our blog looks pretty empty, so let’s create a post.</p>
+
+<h3 id="creating-a-post">Creating a post</h3>
+
+<p>In Siteleaf, there are pages and posts. A site can have many pages. Pages can have many sub-pages. Pages can also have many posts. The difference between a page and a post is its ordering—pages can be reordered through drag and drop while posts are ordered by timestamps. The most common use of a post is for a blog, like the one we’re creating, but posts can also be used for archived content, like in the ‘Currently Brewing’ section of <a href="http://www.cafejonnie.com/">Café Jonnie</a>.</p>
+
+<p><img src="/uploads/hello-world-im-siteleaf-add-post.png" alt="add-post" /></p>
+
+<p>We can create a post for our blog by clicking either the ‘Add post’ link aside our title or the circle aside the ‘Blog’ page in the left sidebar.</p>
+
+<p><img src="/uploads/hello-world-im-siteleaf-new-post.png" alt="new-post" /></p>
+
+<p>The ‘New post’ view is almost identical to the ‘New page’ view, except for the additional taxonomy option on the right sidebar. I’ll go into great detail about taxonomy in a future post, but for now, you can use it to assign tags to your posts.</p>
+
+<p><img src="/uploads/hello-world-im-siteleaf-visibility.png" alt="hello-world-im-siteleaf-visibility" /></p>
+
+<p>On the right sidebar, we also have visibility options. A ‘draft’ post won’t appear when published. A ‘hidden’ post will only be accessible by knowing its exact URL. And a ‘visible’ post is completely public, included in both the feed and sitemap.</p>
+
+<p><img src="/uploads/hello-world-im-siteleaf-upload-asset.png" alt="upload-asset" /></p>
+
+<p>Before we publish, let’s add an image to make our post more visual. We can do this by clicking either the picture icon above the body field or the ‘Upload assets’ link below it. Upon uploading the image, it will appear as a thumbnail below the body. If you used the picture icon, the image’s Markdown code will automatically appear in the body. If you used the ‘Upload assets’ link, you can drag and drop the thumbnail to the body to add the image’s Markdown code.</p>
+
+<p><img src="/uploads/hello-world-im-siteleaf-final-post-preview.jpg" alt="final-post-preview" /></p>
+
+<p>Now, when we preview our post, the image is there along with the ‘announcement’ tag link.</p>
+
+<h3 id="publishing-your-site">Publishing your site</h3>
+
+<p><img src="/uploads/hello-world-im-siteleaf-publish.png" alt="publish" /></p>
+
+<p>If everything looks good, we can click the publish button on the top right. This will first take your content, combine it with your templates, and compile static HTML files. It will then push the files to your host. With the animation, this moment is actually pretty exciting—it makes any update feel like a big deal, worthy of celebration.</p>
+
+<h3 id="wrapping-up">Wrapping up</h3>
+
+<p>I covered a lot of ground in this post, but there is so much more ahead of us. While this ‘Hello World’ was a very basic use-case, know that Siteleaf is capable of handling much greater complexity. The next few posts will demonstrate this through use of custom templates, metadata, and taxonomy. In the meantime, feel free to <a href="http://twitter.com/siteleaf">reach out</a> with any questions or comments.</p>
+
+<p><small>This article was originally posted on destroytoday.com.</small></p>
+
+</div>
+<div class="container">
+<h2>footer</h2>
+</div>
+<script src="/site/scripts/zepto.min.js"></script>
+<script src="/site/scripts/main.js"></script>
+<script>
+(function() {
+    var header = document.querySelector("#header");
+
+    if (window.location.hash) {
+        header.classList.add("headroom--unpinned");
+    }
+
+    var headroom = new Headroom(header, {
+        tolerance: {
+            down: 10,
+            up: 20
+        },
+        offset: 205
+    });
+    headroom.init();
+
+}());
+
+// If using jQuery
+// $('.masthead-video').coverVid(1920, 1080);
+// If not using jQuery (Native Javascript)
+coverVid(document.querySelector('.masthead-video'), 1920, 1080);
+fullscreen();
+$(window).resize(fullscreen);
+$(window).scroll(headerParallax);
+
+function fullscreen() {
+    var masthead = $('.masthead');
+    var windowH = $(window).height();
+    var windowW = $(window).width();
+
+    masthead.width(windowW);
+    masthead.height(windowH);
+}
+
+function headerParallax() {
+    var st = $(window).scrollTop();
+    var headerScroll = $('.masthead h1');
+
+    if (st < 500) {
+        headerScroll.css('opacity', 1 - st / 1000);
+        $('.masthead-arrow ').css('opacity', 0.5 - st / 250);
+        headerScroll.css({
+            '-webkit-transform': 'translateY(' + st / 7 + '%)',
+            '-ms-transform': 'translateY(' + st / 7 + '%)',
+            transform: 'translateY(' + st / 7 + '%)'
+        });
+    }
+}
+
+window.bLazy = new Blazy({
+    container: '.container',
+    success: function(element) {
+        console.log("Element loaded: ", element.nodeName);
+    }
+});
+$(document).ready(function() {
+    $(window).scroll(function() {
+        var scrollPos = $(window).scrollTop(),
+            navbar = $('.navbar-default');
+
+        if (scrollPos > 20) {
+            navbar.addClass('change-color');
+        } else {
+            navbar.removeClass('change-color');
+        }
+    });
+});
+    
+$(document).ready(function() {
+    $(window).scroll(function() {
+        var scrollPos = $(window).scrollTop(),
+            navicon = $('.hamburger__icon');
+        if (scrollPos > 20) {
+            navicon.addClass('change-navicon');
+        } else {
+            navicon.removeClass('change-navicon');
+        }
+    });
+});
+</script>
+</body>
+</html>
+
