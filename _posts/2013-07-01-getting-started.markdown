@@ -7,6 +7,7 @@ tags:
 - tutorial
 - v1
 vimeo: '69294068'
+youtube: '8asRWe5XNw8'
 Docs:
 - getting started
 ---
